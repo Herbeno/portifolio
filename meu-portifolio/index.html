@@ -1,85 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herben Oliveira - Portfólio</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
-    <header>
-        <h1 id="title">Herben Oliveira</h1>
-        <p id="sub">Business Intelligence Analyst | Power BI | SQL | Data Analytics</p>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Herben Oliveira</h1>
+            <p class="hero-sub">
+                Business Intelligence Professional | Data Analytics | Power BI | SQL
+            </p>
+            <p class="hero-desc">
+                Transformo dados em decisões estratégicas através de modelagem eficiente,
+                visualização inteligente e análise orientada a resultados.
+            </p>
+            <a href="#projetos" class="btn-primary">Ver Projetos</a>
+        </div>
     </header>
+
+    <!-- NAV -->
     <nav>
         <a href="#sobre">Sobre</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
     </nav>
+
+    <!-- KPIS -->
     <section id="kpis">
         <div class="kpi-card">
-            <h3 class="counter" data-target="20">14</h3>
+            <h3 class="counter" data-target="20">0</h3>
             <p>Dashboards Desenvolvidos</p>
         </div>
         <div class="kpi-card">
-            <h3 class="counter" data-target="5">5</h3>
+            <h3 class="counter" data-target="5">0</h3>
             <p>Bases Modeladas</p>
         </div>
         <div class="kpi-card">
-            <h3 class="counter" data-target="30">37</h3>
+            <h3 class="counter" data-target="30">0</h3>
             <p>Relatórios Automatizados</p>
         </div>
     </section>
+
+    <!-- CONTEÚDO -->
     <div id="conteudo-foto">
         <section id="conteudo">
+
             <section id="sobre">
-                <h2>Sobre Mim</h2>
-                <p>Profissional de Inteligência de Negócios com formação em Matemática, especializado na transformação de dados em insights estratégicos para tomada de decisão.</p>
-                <p>Possuo experiência com Power BI, Power Query, SQL, Python, modelagem de dados e visualização estratégica, sempre focado em clareza, performance e geração de valor para o negócio.</p>
-            </section>
+    <h2>Sobre Mim</h2>
+
+    <div class="sobre-container">
+        <img src="img/herben.jpg" alt="Herben Oliveira" class="foto-perfil">
+
+        <p>
+            Olá! Sou Herben Oliveira, um profissional de Business Intelligence com formação em Matemática e pós-graduação em Análise e Desenvolvimentod de Sistemas.
+        </p>
+        <p>
+            Tenho experiência em consultas SQL, modelagem de dados, desenvolvimento  e manutenção de dashboards e análise de performance comercial, atualmente estou trabalhando no setor de Alimentos & Bebidas e Hotelaria.  
+        </p>
+            <p>
+                Sou apaixonado por transformar dados em insights estratégicos e estou sempre em busca de novos desafios para aprimorar minhas habilidades e contribuir para o sucesso dos negócios.Meu foco é transformar dados complexos em insights estratégicos que impulsionam a tomada de decisão.
+            </p>
+    </div>
+</section>
+
             <section id="projetos">
     <h2>Projetos em Destaque</h2>
 
+    <!-- Projeto Atual -->
     <div class="projeto-card">
-        <img src="img/dashboard1.png" alt="Dashboard Comercial">
+        <img src="img/notready.png" alt="Dashboard Comercial">
         <div class="projeto-info">
-            <h3>Dashboard Comercial</h3>
-            <p>Análise de vendas, ticket médio e performance regional com modelagem estrela e DAX otimizado.</p>
+            <h3>Dashboard Comercial Estratégico - Projeto atual</h3>
+            <p>Modelagem estrela, query em SQL utilizando PostgreSQL, DAX avançado e análise de performance por ponto de venda no setor de A&B.</p>
+            <p class="stack">Power BI • DAX • SQL • HTML • Data Modeling • Fluxo de dados</p>
         </div>
     </div>
 
+    <!-- E-commerce -->
     <div class="projeto-card">
-        <img src="img/dashboard2.png" alt="Análise de Revendas">
+        <img src="img/ecommerce/dash1.png" alt="Dashboard E-commerce de Livros">
+
         <div class="projeto-info">
-            <h3>Análise de Revendas Acima da Média</h3>
-            <p>Estudo estatístico para identificação de revendas com performance superior à média.</p>
+            <h3>E-Commerce de Livros – Dashboard Estratégico</h3>
+
+            <p><strong>Contexto:</strong> Necessidade de acompanhar faturamento, média de acessos e desempenho por categoria.</p>
+            <p><strong>Solução:</strong> Modelagem em esquema estrela com KPIs estratégicos e segmentação por período e produto.</p>
+            <p><strong>Impacto:</strong> Melhor visibilidade de produtos mais rentáveis e apoio à decisão comercial.</p>
+
+            <p class="stack">Power BI • DAX • Power Query • Modelagem Dimensional</p>
+
+            <div class="botoes-projeto">
+                <button class="btn-secondary" onclick="toggleGaleria()">
+                    Ver mais imagens
+                </button>
+
+                <a href="ecommerce.html" class="btn-primary">
+                    Ver projeto completo
+                </a>
+            </div>
+
+            <div id="galeria-ecommerce" class="galeria">
+                <img src="img/ecommerce/dash2.png" alt="Dashboard E-commerce 2">
+                <img src="img/ecommerce/dash3.png" alt="Dashboard E-commerce 3">
+            </div>
         </div>
     </div>
-</section>
-                <!-- Outros projetos -->
-            </section>
-            <section id="habilidades">
-                <h2>Competências Técnicas</h2>
-                <p>Power BI | SQL | Modelagem de Dados | DAX | Power Query | Excel Avançado | Estatística Aplicada</p>
-            </section>
-            <section id="contato">
-                <h2>Contato</h2>
-                <p>Entre em contato comigo através do e-mail: hrbdata@gmail.com</p>
-            </section>            
-        </section>
-        <section id="foto">
-            <img src="img/herben.jpg" alt="Foto do Herben" id="sua-foto">
-        </section>
+
+    <!-- Pet Shop -->
+    <div class="projeto-card">
+        <img src="img/Petshop/dashpet.png" alt="Dashboard Pet Shop">
+
+        <div class="projeto-info">
+            <h3>Pet Shop – Dashboard de Performance Comercial</h3>
+
+            <p><strong>Contexto:</strong> Monitoramento de vendas, serviços e produtos mais rentáveis.</p>
+            <p><strong>Solução:</strong> Dashboard com análise por categoria, período e tipo de serviço.</p>
+            <p><strong>Impacto:</strong> Identificação de produtos com maior margem e sazonalidade de serviços.</p>
+
+            <p class="stack">Power BI • DAX • Power Query • Modelagem de Dados</p>
+
+            <div class="botoes-projeto">
+                <a href="petshop.html" class="btn-primary">
+                    Ver projeto completo
+                </a>
+            </div>
+        </div>
     </div>
+
+</section>
+
+        </section>
+
+
+    <!-- FOOTER -->
     <footer id="rodape">
         <div class="redes-sociais">
             <a href="https://github.com/Herbeno" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/herbenoliveira" target="_blank">LinkedIn</a>
-        </div>  
+        </div>
     </footer>
+
+    <!-- JS -->
     <script src="js/index.js"></script>
+
 </body>
 </html>
