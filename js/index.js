@@ -27,35 +27,3 @@ function toggleGaleria() {
         galeria.style.display = "flex";
     }
 } 
-
-// Gráfico Demo
-const ctx = document.getElementById('myChart');
-
-new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai'],
-        datasets: [{
-            label: 'Performance Comercial',
-            data: [120, 190, 300, 250, 400],
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            legend: {
-                labels: {
-                    color: '#e2e8f0'
-                }
-            }
-        },
-        scales: {
-            x: {
-                ticks: { color: '#e2e8f0' }
-            },
-            y: {
-                ticks: { color: '#e2e8f0' }
-            }
-        }
-    }
-});
