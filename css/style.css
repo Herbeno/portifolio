@@ -111,15 +111,39 @@ footer {
     background-color: #1e293b;
 }
 
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
 .redes-sociais a {
-    margin: 0 15px;
+    margin: 0;
     color: #38bdf8;
     text-decoration: none;
     font-weight: bold;
+    display: block;
 }
 
 .redes-sociais a:hover {
     text-decoration: underline;
+}
+
+/* Garantia extra (evita conflito de estilos) */
+#rodape .redes-sociais {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+#rodape .redes-sociais a {
+    display: block !important;
+    width: fit-content;
 }
 
 /* RESPONSIVO */
