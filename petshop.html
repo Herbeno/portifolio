@@ -1,96 +1,65 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <title>Projeto Pet Shop - Dashboard Power BI</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <section class="projeto-detalhado">
-      <h1>Dashboard Comercial – Pet Shop</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Analytics | Herben Oliveira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-      <h2>Contexto do Projeto</h2>
-      <p>
-        Este é um projeto desenvolvido com dados fictícios de um Pet Shop também
-        fictício, criado com finalidade educacional e para demonstrar
-        possibilidades analíticas utilizando o Power BI.
-      </p>
+<body>
+    <div class="noise"></div>
+    <div class="progress-bar"></div>
 
-      <p>
-        O cenário simula um pet shop localizado no bairro do Paar, em Belém do
-        Pará, onde os dados são gerados a partir de cadastros realizados no
-        momento das compras. Essas informações permitem explorar padrões de
-        consumo e comportamento dos clientes.
-      </p>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo">← HRB.DATA</a>
+        </div>
+    </nav>
 
-      <h2>Estrutura de Dados</h2>
-      <p>O modelo foi estruturado a partir das seguintes tabelas principais:</p>
+    <main class="container">
+        <section class="projeto-detalhado reveal active" style="padding-top: 150px;">
+            <span class="section-tag">BUSINESS ANALYTICS</span>
+            <h1>Pet Shop – Performance Comercial</h1>
 
-      <ul>
-        <li>
-          <strong>Clientes:</strong> informações como gênero, estado civil e
-          dados cadastrais.
-        </li>
-        <li>
-          <strong>Vendas:</strong> registros de cada compra realizada, incluindo
-          produtos e quantidades.
-        </li>
-        <li>
-          <strong>Produtos:</strong> catálogo com categorias e características
-          dos itens comercializados.
-        </li>
-      </ul>
+            <div class="service-grid" style="margin-top: 40px;">
+                <div class="service-card">
+                    <h3>Contexto</h3>
+                    <p>Análise de comportamento de consumo em um pet shop local, utilizando segmentação de clientes e faturamento por bairro.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Objetivo</h3>
+                    <p>Identificar padrões de sazonalidade e produtos com maior margem para apoiar estratégias de vendas.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Insights</h3>
+                    <p>Ticket médio por gênero, faturamento por categoria de serviço e crescimento mensal.</p>
+                </div>
+            </div>
 
-      <h2>Objetivo Analítico</h2>
-      <p>
-        A partir desses dados, foi desenvolvido um dashboard comercial com o
-        objetivo de:
-      </p>
+            <div style="margin-top: 60px;">
+                <h2>Stack Utilizada</h2>
+                <div class="tags">
+                    <span class="tag">Power BI</span>
+                    <span class="tag">DAX</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Power Query</span>
+                </div>
+            </div>
 
-      <ul>
-        <li>Analisar o desempenho geral do pet shop</li>
-        <li>Identificar produtos e serviços mais vendidos</li>
-        <li>Entender padrões de comportamento dos clientes</li>
-        <li>Apoiar decisões estratégicas para aumento de vendas</li>
-      </ul>
+            <div class="project-img" style="margin-top: 60px;">
+                <img src="img/Petshop/dashpet.png" alt="Dashboard Pet Shop">
+            </div>
 
-      <h2>Resultado</h2>
-      <p>
-        O projeto demonstra como a modelagem adequada dos dados e a construção
-        de indicadores estratégicos podem transformar dados operacionais em
-        informações relevantes para gestão e tomada de decisão.
-      </p>
-      <h2>Problema de Negócio</h2>
-      <p>
-        O desafio na criação de um dashboard é transformar dados brutos em
-        insights. Neste caso, a ideia é criar um painel que oferecesse uma visão
-        clara e abrangente das vendas, dos produtos mais rentáveis e do
-        comportamento dos clientes.
-      </p>
-      <h2>Modelagem de Dados</h2>
-      <p>
-        Estrutura baseada em modelo dimensional com fato de vendas e dimensões
-        de Produto, Categoria, Cliente e Calendário.
-      </p>
+            <div style="margin: 80px 0; text-align: center;">
+                <a href="index.html" class="btn-primary">Voltar ao Portfólio</a>
+            </div>
+        </section>
+    </main>
 
-      <h2>Principais KPIs</h2>
-      <ul>
-        <li>Faturamento Total</li>
-        <li>Quantidade Vendida</li>
-        <li>Ticket Médio</li>
-        <li>Faturamento por Bairro</li>
-        <li>Crescimento Mensal</li>
-      </ul>
-
-      <h2>Stack Utilizada</h2>
-      <p>Power BI • DAX • Power Query • Modelagem Dimensional</p>
-
-      <h2>Visualização</h2>
-      <img src="img/Petshop/dashpet.png" alt="Dashboard Pet Shop" />
-
-      <br /><br />
-
-      <a href="index.html" class="btn-primary">← Voltar para Portfólio</a>
-    </section>
-  </body>
+    <script src="js/index.js"></script>
+</body>
 </html>

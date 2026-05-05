@@ -1,55 +1,67 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <title>Projeto E-commerce - Dashboard Power BI</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <section class="projeto-detalhado">
-      <h1>Dashboard Estratégico – E-Commerce de Livros</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Strategist | Herben Oliveira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-      <p>
-        O objetivo deste projeto é criar um dashboard interativo no Power BI
-        para otimizar as operações de um e-commerce de livros com dados
-        fictícios.
-      </p>
+<body>
+    <div class="noise"></div>
+    <div class="progress-bar"></div>
 
-      <h2>Problema de Negócio</h2>
-      <p>
-        O desafio na criação de um dashboard é transformar dados brutos em
-        insights. Neste caso, a ideia é criar um painel que oferecesse uma visão
-        clara e abrangente das vendas, do perfil dos clientes e das informações
-        do e-commerce.
-      </p>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo">← HRB.DATA</a>
+        </div>
+    </nav>
 
-      <h2>Modelagem de Dados</h2>
-      <p>
-        Foi utilizado modelo dimensional em esquema estrela, com tabelas fato de
-        vendas e dimensões de: Cliente, Produto, Categoria e Calendário.
-      </p>
+    <main class="container">
+        <section class="projeto-detalhado reveal active" style="padding-top: 150px;">
+            <span class="section-tag">CASE STUDY</span>
+            <h1>Dashboard Estratégico – E-Commerce</h1>
 
-      <h2>Principais KPIs</h2>
-      <ul>
-        <li>Assinaturas ativas</li>
-        <li>Média de acessos</li>
-        <li>Metas de vendas</li>
-        <li>Volume de Vendas</li>
-        <li>Crescimento Mensal (%)</li>
-        <li>Idade, profissão e localização da maior parte dos clientes</li>
-      </ul>
+            <div class="service-grid" style="margin-top: 40px;">
+                <div class="service-card">
+                    <h3>Problema</h3>
+                    <p>Transformar dados operacionais de vendas em uma visão executiva para tomada de decisão em tempo real.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Modelagem</h3>
+                    <p>Esquema estrela com tabelas fato de vendas e dimensões Cliente, Produto e Calendário.</p>
+                </div>
+                <div class="service-card">
+                    <h3>KPIs</h3>
+                    <p>Faturamento, Crescimento Mensal (MoM), Ticket Médio e Performance por Categoria.</p>
+                </div>
+            </div>
 
-      <h2>Stack Utilizada</h2>
-      <p>Power BI • DAX • Power Query • Modelagem Dimensional</p>
+            <div style="margin-top: 60px;">
+                <h2>Stack Utilizada</h2>
+                <div class="tags">
+                    <span class="tag">Power BI</span>
+                    <span class="tag">DAX</span>
+                    <span class="tag">Power Query</span>
+                    <span class="tag">Dimensional Modeling</span>
+                </div>
+            </div>
 
-      <h2>Visualizações</h2>
-      <img src="img/Ecommerce/dash1.png" width="600" />
-      <img src="img/Ecommerce/dash2.png" width="600" />
-      <img src="img/Ecommerce/dash3.png" width="600" />
+            <div class="project-img" style="margin-top: 60px; display: grid; gap: 2rem;">
+                <img src="img/Ecommerce/dash1.png" alt="Dashboard 1">
+                <img src="img/Ecommerce/dash2.png" alt="Dashboard 2">
+                <img src="img/Ecommerce/dash3.png" alt="Dashboard 3">
+            </div>
 
-      <br /><br />
+            <div style="margin: 80px 0; text-align: center;">
+                <a href="index.html" class="btn-primary">Voltar ao Portfólio</a>
+            </div>
+        </section>
+    </main>
 
-      <a href="index.html" class="btn-primary">← Voltar para Portfólio</a>
-    </section>
-  </body>
+    <script src="js/index.js"></script>
+</body>
 </html>

@@ -4,200 +4,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herben Oliveira - Portfólio</title>
-
+    <title>Herben Oliveira | Data Architect & BI</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="noise"></div>
+    <div class="progress-bar"></div>
+
+    <!-- NAV -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <span class="logo">HRB.DATA</span>
+            <div class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#skills">Stack</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </div>
+    </nav>
 
     <!-- HERO -->
     <header class="hero">
-        <div class="hero-content">
-            <h1>Herben Oliveira</h1>
-            <p class="hero-sub">
-                Business Intelligence & Data Analytics • Backend em formação
-            </p>
-            <p class="hero-desc">
-                Transformo dados em decisões estratégicas e estou evoluindo para construir
-                soluções de backend e automações que conectam dados, APIs e processos.
-            </p>
-            <a href="#projetos" class="btn-primary">Ver Projetos</a>
+        <div class="hero-grid">
+            <div class="hero-text">
+                <span class="hero-tag reveal">Business Intelligence & Data Analytics</span>
+                <h1 class="reveal">HERBEN<br><span class="accent">OLIVEIRA</span></h1>
+                <p class="hero-desc reveal">
+                    Arquiteto de dados em evolução. Transformo fluxos complexos em decisões estratégicas através de BI, SQL e automações backend.
+                </p>
+                <div class="hero-btns reveal">
+                    <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn-ghost">Contato</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="data-blob"></div>
+            </div>
         </div>
     </header>
 
-    <!-- NAV -->
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#skills">Stack</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-    </nav>
-
     <!-- KPIS -->
-    <section id="kpis">
-        <div class="kpi-card">
-            <h3 class="counter" data-target="20">0</h3>
-            <p>Dashboards Desenvolvidos</p>
-        </div>
-        <div class="kpi-card">
-            <h3 class="counter" data-target="5">0</h3>
-            <p>Bases Modeladas</p>
-        </div>
-        <div class="kpi-card">
-            <h3 class="counter" data-target="30">0</h3>
-            <p>Relatórios Automatizados</p>
-        </div>
-    </section>
-
-    <!-- O QUE EU ENTREGO -->
-    <section id="entrego">
-        <h2>O que eu entrego</h2>
-        <div class="cards">
-            <div class="info-card">
-                <h3>Dashboards e KPIs</h3>
-                <p>Storytelling com dados, métricas acionáveis e foco em decisão.</p>
+    <section id="kpis" class="reveal">
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <span class="kpi-label">DASHBOARDS</span>
+                <h3 class="counter" data-target="20">0</h3>
             </div>
-            <div class="info-card">
-                <h3>Modelagem e Dados</h3>
-                <p>Modelagem dimensional, qualidade de dados e consultas SQL otimizadas.</p>
+            <div class="kpi-card">
+                <span class="kpi-label">BASES MODELADAS</span>
+                <h3 class="counter" data-target="5">0</h3>
             </div>
-            <div class="info-card">
-                <h3>Automação e Rotina</h3>
-                <p>Relatórios automatizados, padronização e redução de retrabalho.</p>
+            <div class="kpi-card">
+                <span class="kpi-label">AUTOMAÇÕES</span>
+                <h3 class="counter" data-target="30">0</h3>
             </div>
         </div>
     </section>
 
-    <!-- CONTEÚDO -->
-    <div id="conteudo-foto">
-        <section id="conteudo">
+    <!-- SERVICES -->
+    <section id="entrego" class="reveal">
+        <div class="section-header">
+            <span class="section-tag">SERVICES</span>
+            <h2>Expertise Técnica</h2>
+        </div>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>BI & Storytelling</h3>
+                <p>Dashboards estratégicos com foco em KPIs acionáveis e clareza visual.</p>
+            </div>
+            <div class="service-card">
+                <h3>Data Modeling</h3>
+                <p>Estruturação de bancos SQL, modelagem dimensional e performance.</p>
+            </div>
+            <div class="service-card">
+                <h3>Backend & Automations</h3>
+                <p>Integração de APIs e automação de rotinas para otimizar o fluxo de dados.</p>
+            </div>
+        </div>
+    </section>
 
-            <section id="sobre">
-    <h2>Sobre Mim</h2>
-
-    <div class="sobre-container">
-        <img src="img/herben.jpg" alt="Herben Oliveira" class="foto-perfil">
-
-        <p>
-            Olá! Sou Herben Oliveira. Atuo com Business Intelligence e Data Analytics, com formação em Matemática e pós-graduação em Análise e Desenvolvimento de Sistemas.
-        </p>
-        <p>
-            Tenho experiência em consultas SQL, modelagem de dados, desenvolvimento e manutenção de dashboards e análise de performance comercial, com atuação no setor de Alimentos & Bebidas e Hotelaria.
-        </p>
-            <p>
-                Hoje meu foco é BI, mas estou em transição para também atuar em backend e automações, conectando dados, APIs e rotinas para gerar ainda mais valor para o negócio.
-            </p>
-    </div>
-</section>
-
-            <section id="skills">
-                <h2>Stack & Ferramentas</h2>
-                <div class="tags">
-                    <span class="tag">Power BI</span>
-                    <span class="tag">DAX</span>
-                    <span class="tag">SQL</span>
-                    <span class="tag">PostgreSQL</span>
-                    <span class="tag">Modelagem Dimensional</span>
-                    <span class="tag">Power Query</span>
-                    <span class="tag">Excel</span>
-                    <span class="tag">Git/GitHub</span>
-                    <span class="tag">Python (início)</span>
-                    <span class="tag">APIs REST (estudando)</span>
-                    <span class="tag">Automações de processos (em aprendizado)</span>
+    <main class="container">
+        <!-- SOBRE -->
+        <section id="sobre" class="reveal">
+            <div class="sobre-grid">
+                <div class="sobre-img">
+                    <img src="img/herben.jpg" alt="Herben Oliveira" class="foto-perfil">
                 </div>
-            </section>
+                <div class="sobre-content">
+                    <span class="section-tag">BIO</span>
+                    <h2>A Trajetória</h2>
+                    <p>Matemático por formação e desenvolvedor por paixão. Com pós-graduação em ADS, foco minha carreira em unir o rigor analítico dos dados com a eficiência do desenvolvimento backend.</p>
+                    <p>Especialista em SQL e Power BI, estou atualmente expandindo meu ecossistema para Python e construção de APIs robustas.</p>
+                </div>
+            </div>
+        </section>
 
-            <section id="projetos">
-    <h2>Projetos em Destaque</h2>
+        <!-- STACK -->
+        <section id="skills" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">TECH STACK</span>
+                <h2>Ferramentas & Tecnologias</h2>
+            </div>
+            <div class="stack-grid">
+                <div class="stack-category">
+                    <h3>Analytics</h3>
+                    <div class="tags">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">DAX</span>
+                        <span class="tag">Power Query</span>
+                        <span class="tag">Excel</span>
+                    </div>
+                </div>
+                <div class="stack-category">
+                    <h3>Data Engineering</h3>
+                    <div class="tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">ETL</span>
+                        <span class="tag">Star Schema</span>
+                    </div>
+                </div>
+                <div class="stack-category">
+                    <h3>Development</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Git/GitHub</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">Vercel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Projeto Atual -->
-    <div class="projeto-card">
-        <img src="img/notready.png" alt="Dashboard Comercial">
-        <div class="projeto-info">
-            <h3>Dashboard Comercial Estratégico - Projeto atual</h3>
-            <p>Modelagem estrela, query em SQL utilizando PostgreSQL, DAX avançado e análise de performance por ponto de venda no setor de A&B.</p>
-            <p class="stack">Power BI • DAX • SQL • HTML • Data Modeling • Fluxo de dados</p>
-        </div>
-    </div>
-
-    <!-- E-commerce -->
-    <div class="projeto-card">
-        <img src="img/Ecommerce/dash1.png" alt="Dashboard E-commerce de Livros">
-
-        <div class="projeto-info">
-            <h3>E-Commerce de Livros – Dashboard Estratégico</h3>
-
-            <p><strong>Contexto:</strong> Necessidade de acompanhar faturamento, média de acessos e desempenho por categoria.</p>
-            <p><strong>Solução:</strong> Modelagem em esquema estrela com KPIs estratégicos e segmentação por período e produto.</p>
-            <p><strong>Impacto:</strong> Melhor visibilidade de produtos mais rentáveis e apoio à decisão comercial.</p>
-
-            <p class="stack">Power BI • DAX • Power Query • Modelagem Dimensional</p>
-
-            <div class="botoes-projeto">
-                <button class="btn-secondary" onclick="toggleGaleria()">
-                    Ver mais imagens
-                </button>
-
-                <a href="ecommerce.html" class="btn-primary">
-                    Ver projeto completo
-                </a>
+        <!-- PROJETOS -->
+        <section id="projetos" class="reveal">
+            <div class="section-header">
+                <span class="section-tag">PORTFOLIO</span>
+                <h2>Projetos Selecionados</h2>
             </div>
 
-            <div id="galeria-ecommerce" class="galeria">
-                <img src="img/Ecommerce/dash2.png" alt="Dashboard E-commerce 2">
-                <img src="img/Ecommerce/dash3.png" alt="Dashboard E-commerce 3">
+            <!-- Projeto 1 -->
+            <div class="project-block">
+                <div class="project-img">
+                    <img src="img/notready.png" alt="Dashboard Comercial">
+                </div>
+                <div class="project-info">
+                    <span class="proj-type">EM DESENVOLVIMENTO</span>
+                    <h3>Estratégia A&B Performance</h3>
+                    <p>Análise de performance por PDV utilizando PostgreSQL e DAX avançado.</p>
+                    <div class="proj-stack">
+                        <span>#SQL</span> <span>#PBI</span> <span>#Modelling</span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Pet Shop -->
-    <div class="projeto-card">
-        <img src="img/Petshop/dashpet.png" alt="Dashboard Pet Shop">
-
-        <div class="projeto-info">
-            <h3>Pet Shop – Dashboard de Performance Comercial</h3>
-
-            <p><strong>Contexto:</strong> Monitoramento de vendas, serviços e produtos mais rentáveis.</p>
-            <p><strong>Solução:</strong> Dashboard com análise por categoria, período e tipo de serviço.</p>
-            <p><strong>Impacto:</strong> Identificação de produtos com maior margem e sazonalidade de serviços.</p>
-
-            <p class="stack">Power BI • DAX • Power Query • Modelagem de Dados</p>
-
-            <div class="botoes-projeto">
-                <a href="petshop.html" class="btn-primary">
-                    Ver projeto completo
-                </a>
+            <!-- Projeto 2 -->
+            <div class="project-block invert">
+                <div class="project-img">
+                    <img src="img/Ecommerce/dash1.png" alt="E-commerce Analytics">
+                </div>
+                <div class="project-info">
+                    <span class="proj-type">CASE STUDY</span>
+                    <h3>E-Commerce Strategist</h3>
+                    <p>Monitoramento completo de faturamento e comportamento de consumo.</p>
+                    <div class="proj-stack">
+                        <span>#TimeIntelligence</span> <span>#UX/UI</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="ecommerce.html" class="link-arrow">Ver Detalhes →</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-</section>
-        </div>
+            <!-- Projeto 3 -->
+            <div class="project-block">
+                <div class="project-img">
+                    <!-- Placeholder image since it's not deployed yet -->
+                    <div class="data-blob" style="opacity: 0.1; height: 300px; border-radius: 12px; border: 1px dashed var(--border);"></div>
+                </div>
+                <div class="project-info">
+                    <span class="proj-type">BACKEND & AUTOMATION</span>
+                    <h3>Smart Price Scraper</h3>
+                    <p>Automação de busca de preços em tempo real, consolidando dados de múltiplas fontes para análise competitiva.</p>
+                    <div class="proj-stack">
+                        <span>#Python</span> <span>#WebScraping</span> <span>#Automation</span>
+                    </div>
+                    <div class="proj-links">
+                        <span class="proj-type" style="color: var(--text-muted);">EM BREVE (DEPLOY EM ANDAMENTO)</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
     <!-- CONTATO -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>
-            Estou trabalhando na minha rotina profissional e mantive este portfólio para documentar meus projetos e evoluir nas minhas habilidades.
-        </p>
-        <p>
-            Você pode falar comigo diretamente pelo e-mail
-            <a href="mailto:hrbdata17@gmail.com">hrbdata17@gmail.com</a>
-            ou pelas redes abaixo.
-        </p>
+    <section id="contato" class="reveal">
+        <div class="contato-box">
+            <h2>Vamos construir algo inteligente?</h2>
+            <p>Disponível para novos desafios em BI e Backend.</p>
+            <a href="mailto:hrbdata17@gmail.com" class="email-btn">hrbdata17@gmail.com</a>
+            <div class="social-links">
+                <a href="https://github.com/Herbeno" target="_blank">GITHUB</a>
+                <a href="https://www.linkedin.com/in/herbenoliveira" target="_blank">LINKEDIN</a>
+            </div>
+        </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer id="rodape">
-        <div class="redes-sociais">
-            <a href="https://github.com/Herbeno" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/herbenoliveira" target="_blank">LinkedIn</a>
-        </div>
+    <footer class="footer">
+        <p>© 2026 HRB.DATA — Crafted with code and precision.</p>
     </footer>
 
     <!-- JS -->
     <script src="js/index.js"></script>
-
 </body>
 </html>

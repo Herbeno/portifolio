@@ -1,29 +1,69 @@
-// KPIs animados
-const counters = document.querySelectorAll('.counter');
+// Intersection Observer for Reveal Animation
+const revealOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+};
 
-counters.forEach(counter => {
-    counter.innerText = '0';
-    const updateCounter = () => {
-        const target = +counter.getAttribute('data-target');
-        const c = +counter.innerText;
-        const increment = target / 100;
+const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+        }
+    });
+}, revealOptions);
 
-        if (c < target) {
-            counter.innerText = `${Math.ceil(c + increment)}`;
-            setTimeout(updateCounter, 20);
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// Counter Animation with Intersection Observer
+const counterOptions = {
+    threshold: 0.5
+};
+
+const counterObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = +counter.getAttribute('data-target');
+            animateCounter(counter, target);
+            observer.unobserve(counter);
+        }
+    });
+}, counterOptions);
+
+document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+function animateCounter(el, target) {
+    let current = 0;
+    const duration = 2000; // 2 seconds
+    const increment = target / (duration / 16); // 60fps
+
+    const update = () => {
+        current += increment;
+        if (current < target) {
+            el.innerText = Math.ceil(current);
+            requestAnimationFrame(update);
         } else {
-            counter.innerText = `+${target}`;
+            el.innerText = `+${target}`;
         }
     };
-    updateCounter();
+    update();
+}
+
+// Progress Bar Logic
+window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.querySelector(".progress-bar").style.width = scrolled + "%";
 });
 
-function toggleGaleria() {
-    const galeria = document.getElementById("galeria-ecommerce");
-
-    if (galeria.style.display === "flex") {
-        galeria.style.display = "none";
+// Smooth Navigation Blur
+const nav = document.querySelector('.glass-nav');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        nav.style.padding = "1rem 5%";
     } else {
-        galeria.style.display = "flex";
+        nav.style.padding = "1.5rem 5%";
     }
-} 
+});

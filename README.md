@@ -1,82 +1,46 @@
-# Business Intelligence Portfolio – Herben Oliveira
+# The Data Architect Portfolio – Herben Oliveira
 
-Welcome to my Business Intelligence portfolio repository.
-
-This project showcases interactive dashboards and analytical solutions developed using Power BI, SQL, and data modeling techniques focused on strategic decision-making.
+Modern, high-performance portfolio showcasing expertise in **Business Intelligence**, **Data Engineering**, and **Backend Development**.
 
 ---
 
-## About Me
-
-Business Intelligence professional with a background in Mathematics and a postgraduate degree in Systems Analysis and Development. Experienced in data modeling, dashboard development, and transforming raw data into actionable insights to drive strategic decisions.
-
----
-
-## Live Portfolio
-
- Access here:  
- https://portifolio-wine-eight-99.vercel.app/
+## 🎨 Aesthetic: "Cyber-Minimalist"
+This portfolio has been modernized to reflect a professional, data-centric identity. Using a deep black palette with electric lime accents, it focuses on precision, technical depth, and clean UI/UX.
 
 ---
 
-## Featured Projects
+## 🚀 Featured Projects
 
-### E-Commerce Dashboard
-Strategic dashboard developed to analyze sales performance, category trends, and customer behavior.
+### E-Commerce Strategist
+Full-stack analytics dashboard for sales monitoring and customer behavior.
+- **Key Features**: Star schema, MoM Growth, Category performance.
+- **Tech**: Power BI • DAX • Power Query
 
-**Highlights:**
-- Star schema data modeling
-- KPI development (Revenue, Ticket Average, Growth %)
-- Time intelligence analysis
-- Interactive filters and drill-down analysis
-
-**Tech Stack:**
-Power BI • DAX • Power Query • Data Modeling
+### Pet Shop Performance
+Commercial dashboard focused on local business growth and segmentation.
+- **Key Features**: Customer behavior patterns, neighborhood faturamento.
+- **Tech**: Power BI • SQL • DAX
 
 ---
 
-### Pet Shop Commercial Dashboard
-Dashboard focused on sales performance, product categories, and customer insights using fictional business data.
-
-**Highlights:**
-- Customer segmentation
-- Product performance analysis
-- Commercial indicators
-- Data storytelling
-
-**Tech Stack:**
-Power BI • DAX • Power Query • Dimensional Modeling
+## 🛠️ Tech Stack & Skills
+- **Data**: Power BI, SQL (PostgreSQL/SQL Server), DAX, Power Query.
+- **Engineering**: Data Modeling (Dimensional), ETL, API Integration.
+- **Frontend**: HTML5, CSS3 (Glassmorphism), JavaScript (IntersectionObserver).
 
 ---
 
-## Technologies Used
-
-- Power BI
-- DAX
-- SQL
-- Power Query
-- Data Modeling (Star Schema)
-- HTML
-- CSS
-- JavaScript
+## 📈 KPIs & Impact
+- **20+** Dashboards developed.
+- **5+** Major databases modeled.
+- **30+** Automated reports and processes.
 
 ---
 
-## Objective
-
-This portfolio was built to demonstrate my ability to:
-- Structure and model business data
-- Build analytical dashboards
-- Translate business problems into data solutions
-- Support strategic decision-making through insights
+## 📬 Connect with me
+- **LinkedIn**: [herbenoliveira](https://www.linkedin.com/in/herbenoliveira)
+- **GitHub**: [Herbeno](https://github.com/Herbeno)
+- **Email**: hrbdata17@gmail.com
 
 ---
-
-## Contact
-
-- LinkedIn: https://www.linkedin.com/in/herbenoliveira
-- GitHub: https://github.com/Herbeno
-
----
-
-⭐ Feel free to explore the repository and connect!
+*Crafted with code and precision.*
