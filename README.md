@@ -4,18 +4,18 @@ Portfólio moderno de alto desempenho destacando expertise em **Business Intelli
 
 ---
 
-## 🎨 Estética: "Cyber-Minimalist"
+## Estética: "Cyber-Minimalist"
 Este portfólio foi modernizado para refletir uma identidade profissional centrada em dados. Utilizando uma paleta de preto profundo com acentos em "electric lime", o foco está na precisão, profundidade técnica e uma interface limpa (UI/UX).
 
 ---
 
-## 🌐 Link do Portfólio
+## Link do Portfólio
 Acesse a versão online aqui:  
-👉 **[https://portifolio-wine-eight-99.vercel.app/](https://portifolio-wine-eight-99.vercel.app/)**
+ **[https://portifolio-wine-eight-99.vercel.app/](https://portifolio-wine-eight-99.vercel.app/)**
 
 ---
 
-## 🚀 Projetos em Destaque
+## Projetos em Destaque
 
 ### Buscador de Ofertas Inteligente
 Sistema de monitoramento e análise estatística para detecção de ofertas em tempo real.
@@ -29,24 +29,22 @@ Dashboard analítico completo para monitoramento de vendas e comportamento de co
 
 ---
 
-## 🛠️ Tech Stack & Skills
+## Tech Stack & Skills
 - **Dados**: Power BI, Power Query, DAX, Excel Avançado.
 - **Engenharia**: Automações ETL, Modelagem Dimensional, Playwright.
 - **IA & Dev**: AI-Driven Development (Cursor/MCP), Python, FastAPI, React.
 
 ---
 
-## 📈 KPIs & Impacto
+## KPIs & Impacto
 - **20+** Dashboards desenvolvidos.
 - **5+** Grandes bases de dados modeladas.
 - **30+** Relatórios e processos automatizados.
 
 ---
 
-## 📬 Contato
+## Contato
 - **LinkedIn**: [herbenoliveira](https://www.linkedin.com/in/herbenoliveira)
 - **GitHub**: [Herbeno](https://github.com/Herbeno)
 - **Email**: hrbdata17@gmail.com
 
----
-*Desenvolvido com código e precisão.*
