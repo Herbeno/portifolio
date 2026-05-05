@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Ofertas | Data & Automation Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="noise"></div>
+    <div class="progress-bar"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo">← HRB.DATA</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="projeto-detalhado reveal active" style="padding-top: 150px;">
+            <span class="section-tag">FULL-STACK DATA ENGINEERING</span>
+            <h1>Buscador de Ofertas: Monitoramento e Análise Estatística</h1>
+
+            <div class="service-grid" style="margin-top: 40px;">
+                <div class="service-card">
+                    <h3>A Abordagem</h3>
+                    <p>Mais do que um buscador, o sistema atua como uma pipeline de dados: extração via Playwright, processamento em Pandas e entrega em React 19.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Inteligência de Dados</h3>
+                    <p>Aplicação de filtros de outliers e cálculo de mediana limpa para identificar oportunidades reais com threshold de 10% abaixo do mercado.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Stack Moderna</h3>
+                    <p>Backend em FastAPI orquestrando a lógica de dados, com frontend reativo utilizando Tailwind 4 e animações Framer Motion.</p>
+                </div>
+            </div>
+
+            <div class="sobre-grid" style="margin-top: 80px; gap: 4rem;">
+                <div class="sobre-content">
+                    <span class="section-tag">METODOLOGIA</span>
+                    <h2>Engenharia de Decisão</h2>
+                    <p>Como analista, entendo que dados brutos são ruído. Este projeto foca na <strong>limpeza de outliers</strong>: anúncios com preços 30% abaixo ou 300% acima da mediana são descartados automaticamente para evitar "anúncios isca" ou acessórios.</p>
+                    <p>O resultado é uma mediana refinada que representa o valor real do item, permitindo que o algoritmo destaque apenas o que é estatisticamente uma oferta imperdível.</p>
+                </div>
+                <div class="stack-category">
+                    <h3>Destaques Técnicos</h3>
+                    <div class="tags" style="margin-top: 20px;">
+                        <span class="tag">Python 3.10+</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Playwright</span>
+                        <span class="tag">React 19</span>
+                        <span class="tag">Tailwind 4</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-img" style="margin-top: 60px; display: grid; gap: 3rem;">
+                <img src="img/projeto buscador/Captura de tela 2026-05-04 200634.png" alt="Interface Principal do Buscador" style="border: 1px solid var(--border);">
+                <img src="img/projeto buscador/Captura de tela 2026-05-04 200741.png" alt="Análise de Resultados e Ofertas" style="border: 1px solid var(--border);">
+                <img src="img/projeto buscador/Captura de tela 2026-05-04 200803.png" alt="Detecção de Outliers em Ação" style="border: 1px solid var(--border);">
+                <img src="img/projeto buscador/Captura de tela 2026-05-04 200823.png" alt="Painel de Controle e Estatísticas" style="border: 1px solid var(--border);">
+            </div>
+
+            <div style="margin: 100px 0; text-align: center;">
+                <a href="index.html" class="btn-primary">Voltar ao Portfólio Principal</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
