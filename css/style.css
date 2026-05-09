@@ -156,6 +156,19 @@ h1, h2, h3 {
     font-weight: 700;
     letter-spacing: 0.1em;
     font-size: 1.1rem;
+    position: relative;
+}
+
+.logo::after {
+    content: '|';
+    margin-left: 2px;
+    color: var(--accent);
+    animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 .nav-links {

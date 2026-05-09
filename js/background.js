@@ -1,8 +1,3 @@
-/**
- * GRID INTERACTIVE BACKGROUND
- * A futuristic grid that reacts to mouse movement.
- */
-
 class InteractiveGrid {
     constructor() {
         this.canvas = document.getElementById('grid-bg');

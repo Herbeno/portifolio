@@ -67,3 +67,44 @@ window.addEventListener('scroll', () => {
         nav.style.padding = "1.5rem 5%";
     }
 });
+
+// Typewriter Effect for Logo
+const logo = document.querySelector('.logo');
+if (logo) {
+    const texts = ["HRB.DATA", "HERBEN OLIVEIRA"];
+    let textIndex = 0;
+    let charIndex = texts[textIndex].length;
+    let isDeleting = true; // Start by deleting the initial text
+    let typeSpeed = 150;
+
+    const hasArrow = logo.textContent.includes('←');
+    const prefix = hasArrow ? '← ' : '';
+
+    function type() {
+        const currentText = texts[textIndex];
+        
+        if (isDeleting) {
+            charIndex--;
+            typeSpeed = 80;
+        } else {
+            charIndex++;
+            typeSpeed = 150;
+        }
+
+        logo.textContent = prefix + currentText.substring(0, charIndex);
+
+        if (!isDeleting && charIndex === currentText.length) {
+            isDeleting = true;
+            typeSpeed = 3000; // Pause when word is complete
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % texts.length;
+            typeSpeed = 500; // Pause before typing next word
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+
+    // Initial delay before starting the effect
+    setTimeout(type, 3000);
+}
