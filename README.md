@@ -1,50 +1,41 @@
-# Portfólio HRB.DATA – Herben Oliveira
+# Herben Oliveira | Data Analytics & Automation
 
-Portfólio moderno de alto desempenho destacando expertise em **Business Intelligence**, **Engenharia de Dados** e **Desenvolvimento Backend**.
+Focado em transformar dados complexos em visões claras e processos ágeis.
 
----
-
-## Estética: "Cyber-Minimalist"
-Este portfólio foi modernizado para refletir uma identidade profissional centrada em dados. Utilizando uma paleta de preto profundo com acentos em "electric lime", o foco está na precisão, profundidade técnica e uma interface limpa (UI/UX).
+Acredito que a tecnologia deve servir para simplificar. Minha paixão é analisar situações, identificar gargalos e construir soluções que não apenas mostrem o que aconteceu, mas que facilitem a decisão do que fazer a seguir. Unindo a precisão da Análise de Dados com o poder da Automação, busco eliminar o trabalho repetitivo para focar no que realmente importa: o insight.
 
 ---
 
-## Link do Portfólio
-Acesse a versão online aqui:  
- **[https://portifolio-wine-eight-99.vercel.app/](https://portifolio-wine-eight-99.vercel.app/)**
+## Onde coloco minha energia
+
+### [Buscador de Ofertas Inteligente](https://portifolio-wine-eight-99.vercel.app/buscador.html)
+Este é o projeto que melhor resume meu fluxo de trabalho. Ele une:
+- **Extração**: Automação com Playwright para capturar dados em tempo real.
+- **Tratamento**: Limpeza estatística com Pandas para remover ruídos e outliers.
+- **Entrega**: Uma interface clara e um backend ágil com FastAPI.
+*O objetivo aqui foi simples: automatizar o monitoramento para que o usuário receba apenas oportunidades reais, sem precisar minerar manualmente.*
+
+### [E-Commerce Strategist](https://portifolio-wine-eight-99.vercel.app/ecommerce.html)
+Focado em Business Intelligence, onde aplico modelagem Star Schema e DAX avançado para criar dashboards que contam histórias. Minha meta é que, ao olhar para o painel, o gestor entenda o faturamento e o comportamento do consumo de forma instantânea.
 
 ---
 
-## Projetos em Destaque
+## Tecnologias & Expertise
 
-### Buscador de Ofertas Inteligente
-Sistema de monitoramento e análise estatística para detecção de ofertas em tempo real.
-- **Destaques**: Limpeza de outliers, cálculo de mediana limpa e automação de scraping.
-- **Tech**: Python • FastAPI • Playwright • Pandas • React 19
-
-### E-Commerce Strategist
-Dashboard analítico completo para monitoramento de vendas e comportamento de consumo.
-- **Destaques**: Modelo Star Schema, crescimento MoM, performance por categoria.
-- **Tech**: Power BI • DAX • Power Query
+- **Análise & BI**: Power BI, DAX, Power Query e Excel Avançado.
+- **Engenharia de Dados**: Python, Automações ETL, Modelagem Dimensional (Star Schema) e Playwright.
+- **Desenvolvimento Moderno**: Arquiteturas orientadas a IA (MCP/Model Context Protocol), FastAPI e React.
 
 ---
 
-## Tech Stack & Skills
-- **Dados**: Power BI, Power Query, DAX, Excel Avançado.
-- **Engenharia**: Automações ETL, Modelagem Dimensional, Playwright.
-- **IA & Dev**: AI-Driven Development (Cursor/MCP), Python, FastAPI, React.
+## Impacto em Números
+- **20+** Dashboards estratégicos entregues.
+- **30+** Processos e relatórios manuais convertidos em automações ágeis.
+- **5+** Ecossistemas de dados modelados do zero.
 
 ---
 
-## KPIs & Impacto
-- **20+** Dashboards desenvolvidos.
-- **5+** Grandes bases de dados modeladas.
-- **30+** Relatórios e processos automatizados.
-
----
-
-## Contato
+## Contatos
 - **LinkedIn**: [herbenoliveira](https://www.linkedin.com/in/herbenoliveira)
 - **GitHub**: [Herbeno](https://github.com/Herbeno)
 - **Email**: hrbdata17@gmail.com
-

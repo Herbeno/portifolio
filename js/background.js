@@ -7,9 +7,11 @@ class InteractiveGrid {
         this.points = [];
         this.mouse = { x: -1000, y: -1000 };
         this.cellSize = 40;
-        this.gap = 40;
+        this.gap = 35; // Reduzi o gap para ter mais bolinhas na tela
+        this.isVisible = true;
         
         this.init();
+        this.setupObservers();
         this.animate();
         
         window.addEventListener('resize', () => this.init());
@@ -17,6 +19,17 @@ class InteractiveGrid {
             this.mouse.x = e.clientX;
             this.mouse.y = e.clientY;
         });
+    }
+
+    setupObservers() {
+        // Pause animation when canvas is not visible to save CPU
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                this.isVisible = entry.isIntersecting;
+            });
+        }, { threshold: 0.1 });
+
+        observer.observe(this.canvas);
     }
 
     init() {
@@ -40,39 +53,54 @@ class InteractiveGrid {
             }
         }
     }
-
     animate() {
+        if (!this.isVisible) {
+            requestAnimationFrame(() => this.animate());
+            return;
+        }
+
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+        const isLightMode = document.documentElement.classList.contains('light-mode');
         
+        // No modo claro, forçamos um verde mais escuro e opaco se a variável falhar
+        const accentColor = isLightMode ? '#748e00' : '#ccff00';
+
         this.points.forEach(p => {
             const dx = this.mouse.x - p.originX;
             const dy = this.mouse.y - p.originY;
             const dist = Math.sqrt(dx * dx + dy * dy);
-            const maxDist = 150;
-            
+            const maxDist = 220; // Raio de influência maior
+
             if (dist < maxDist) {
                 const angle = Math.atan2(dy, dx);
                 const force = (maxDist - dist) / maxDist;
-                
-                // Pushing effect
-                p.x = p.originX - Math.cos(angle) * force * 15;
-                p.y = p.originY - Math.sin(angle) * force * 15;
-                p.opacity = 0.1 + force * 0.5;
-                p.size = 2 + force * 3;
+
+                p.x = p.originX - Math.cos(angle) * force * 35; // Empurrão mais forte
+                p.y = p.originY - Math.sin(angle) * force * 35;
+
+                // Opacidade máxima quando o mouse está em cima
+                const baseOpacity = isLightMode ? 0.5 : 0.2;
+                p.opacity = baseOpacity + force * 0.7;
+                p.size = 4 + force * 8; // Bolinhas crescem muito mais
             } else {
+                const targetOpacity = isLightMode ? 0.25 : 0.15;
                 p.x += (p.originX - p.x) * 0.1;
                 p.y += (p.originY - p.y) * 0.1;
-                p.opacity += (0.1 - p.opacity) * 0.1;
-                p.size += (2 - p.size) * 0.1;
+                p.opacity += (targetOpacity - p.opacity) * 0.1;
+                p.size += (3 - p.size) * 0.1; // Tamanho base maior (3px)
             }
-            
-            this.ctx.fillStyle = `rgba(204, 255, 0, ${p.opacity})`; // Neon Lime
+
             this.ctx.beginPath();
-            // Draw a small square
-            this.ctx.rect(p.x - p.size/2, p.y - p.size/2, p.size, p.size);
+            this.ctx.globalAlpha = p.opacity;
+            this.ctx.fillStyle = accentColor;
+            
+            // Círculo perfeito
+            this.ctx.arc(p.x, p.y, p.size / 2, 0, Math.PI * 2);
             this.ctx.fill();
         });
-        
+
+        this.ctx.globalAlpha = 1.0;
         requestAnimationFrame(() => this.animate());
     }
 }
