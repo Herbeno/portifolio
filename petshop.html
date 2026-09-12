@@ -1,65 +1,116 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Shop Analytics | Herben Oliveira</title>
+    <title>Pet Shop Analytics | Dashboard Power BI — Herben Oliveira</title>
+    <meta name="description" content="Case study de analytics para pet shop: segmentação de clientes, faturamento por bairro, sazonalidade e performance comercial com Power BI e SQL.">
+    <meta name="author" content="Herben Oliveira">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#050505">
+    <link rel="canonical" href="https://herbenoliveira.netlify.app/petshop.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://herbenoliveira.netlify.app/petshop.html">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="HRB.DATA">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://herbenoliveira.netlify.app/petshop.html">
+    <meta property="og:title" content="Pet Shop Analytics | Dashboard Power BI — Herben Oliveira">
+    <meta property="og:description" content="Análise de comportamento de consumo e performance comercial de pet shop com Power BI.">
+    <meta property="og:image" content="https://herbenoliveira.netlify.app/img/Petshop/dashpet.png">
+    <meta property="og:image:alt" content="Dashboard Power BI de performance comercial de pet shop">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pet Shop Analytics | Dashboard Power BI">
+    <meta name="twitter:description" content="Segmentação de clientes, faturamento por bairro e análise de sazonalidade.">
+    <meta name="twitter:image" content="https://herbenoliveira.netlify.app/img/Petshop/dashpet.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Portfólio", "item": "https://herbenoliveira.netlify.app/" },
+            { "@type": "ListItem", "position": 2, "name": "Pet Shop Analytics", "item": "https://herbenoliveira.netlify.app/petshop.html" }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Pet Shop – Performance Comercial",
+          "description": "Análise de comportamento de consumo e performance comercial de pet shop.",
+          "url": "https://herbenoliveira.netlify.app/petshop.html",
+          "author": { "@type": "Person", "name": "Herben Oliveira", "url": "https://herbenoliveira.netlify.app/" },
+          "inLanguage": "pt-BR",
+          "keywords": "Power BI, DAX, SQL, pet shop, Business Analytics"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
-    <div class="noise"></div>
-    <div class="progress-bar"></div>
+    <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
 
-    <nav class="glass-nav">
+    <div class="noise" aria-hidden="true"></div>
+    <div class="progress-bar" aria-hidden="true"></div>
+
+    <nav class="glass-nav" aria-label="Navegação do projeto">
         <div class="nav-content">
             <a href="index.html" class="logo">← HRB.DATA</a>
         </div>
     </nav>
 
-    <main class="container">
-        <section class="projeto-detalhado reveal active" style="padding-top: 150px;">
+    <main id="main-content" class="container">
+        <article class="projeto-detalhado reveal active" style="padding-top: 150px;">
             <span class="section-tag">BUSINESS ANALYTICS</span>
             <h1>Pet Shop – Performance Comercial</h1>
 
             <div class="service-grid" style="margin-top: 40px;">
-                <div class="service-card">
-                    <h3>Contexto</h3>
+                <section class="service-card">
+                    <h2>Contexto</h2>
                     <p>Análise de comportamento de consumo em um pet shop local, utilizando segmentação de clientes e faturamento por bairro.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Objetivo</h3>
+                </section>
+                <section class="service-card">
+                    <h2>Objetivo</h2>
                     <p>Identificar padrões de sazonalidade e produtos com maior margem para apoiar estratégias de vendas.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Insights</h3>
+                </section>
+                <section class="service-card">
+                    <h2>Insights</h2>
                     <p>Ticket médio por gênero, faturamento por categoria de serviço e crescimento mensal.</p>
-                </div>
+                </section>
             </div>
 
-            <div style="margin-top: 60px;">
+            <section style="margin-top: 60px;">
                 <h2>Stack Utilizada</h2>
-                <div class="tags">
-                    <span class="tag">Power BI</span>
-                    <span class="tag">DAX</span>
-                    <span class="tag">SQL</span>
-                    <span class="tag">Power Query</span>
-                </div>
-            </div>
+                <ul class="tags" role="list">
+                    <li class="tag">Power BI</li>
+                    <li class="tag">DAX</li>
+                    <li class="tag">SQL</li>
+                    <li class="tag">Power Query</li>
+                </ul>
+            </section>
 
-            <div class="project-img" style="margin-top: 60px;">
-                <img src="img/Petshop/dashpet.png" alt="Dashboard Pet Shop">
-            </div>
+            <figure class="project-img" style="margin-top: 60px;">
+                <img src="img/Petshop/dashpet.png" alt="Dashboard Power BI de performance comercial do pet shop" width="1200" height="675" loading="lazy" decoding="async">
+            </figure>
 
-            <div style="margin: 80px 0; text-align: center;">
+            <nav aria-label="Navegação do portfólio" style="margin: 80px 0; text-align: center;">
                 <a href="index.html" class="btn-primary">Voltar ao Portfólio</a>
-            </div>
-        </section>
+            </nav>
+        </article>
     </main>
 
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
 </body>
 </html>

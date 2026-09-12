@@ -8,14 +8,14 @@ Acredito que a tecnologia deve servir para simplificar. Minha paixão é analisa
 
 ## Onde coloco minha energia
 
-### [Buscador de Ofertas Inteligente](https://portifolio-wine-eight-99.vercel.app/buscador.html)
+### [Buscador de Ofertas Inteligente](https://herben-oliveira.netlify.app/buscador.html)
 Este é o projeto que melhor resume meu fluxo de trabalho. Ele une:
 - **Extração**: Automação com Playwright para capturar dados em tempo real.
 - **Tratamento**: Limpeza estatística com Pandas para remover ruídos e outliers.
 - **Entrega**: Uma interface clara e um backend ágil com FastAPI.
 *O objetivo aqui foi simples: automatizar o monitoramento para que o usuário receba apenas oportunidades reais, sem precisar minerar manualmente.*
 
-### [E-Commerce Strategist](https://portifolio-wine-eight-99.vercel.app/ecommerce.html)
+### [E-Commerce Strategist](https://herben-oliveira.netlify.app/ecommerce.html)
 Focado em Business Intelligence, onde aplico modelagem Star Schema e DAX avançado para criar dashboards que contam histórias. Minha meta é que, ao olhar para o painel, o gestor entenda o faturamento e o comportamento do consumo de forma instantânea.
 
 ---

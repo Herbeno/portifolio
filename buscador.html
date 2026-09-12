@@ -1,43 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador de Ofertas | Data & Automation Case Study</title>
+    <title>Buscador de Ofertas Inteligente | Case Study — Herben Oliveira</title>
+    <meta name="description" content="Case study do Buscador de Ofertas: web scraping com Playwright, análise estatística com Pandas e API FastAPI para detectar ofertas reais abaixo do mercado.">
+    <meta name="author" content="Herben Oliveira">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#050505">
+    <link rel="canonical" href="https://herbenoliveira.netlify.app/buscador.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://herbenoliveira.netlify.app/buscador.html">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="HRB.DATA">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://herbenoliveira.netlify.app/buscador.html">
+    <meta property="og:title" content="Buscador de Ofertas Inteligente | Case Study — Herben Oliveira">
+    <meta property="og:description" content="Automação de web scraping, limpeza de outliers e detecção de ofertas com Python, FastAPI, Playwright e Pandas.">
+    <meta property="og:image" content="https://herbenoliveira.netlify.app/img/herben.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Buscador de Ofertas Inteligente | Case Study">
+    <meta name="twitter:description" content="Pipeline de dados com Playwright, Pandas e FastAPI para monitoramento de preços.">
+    <meta name="twitter:image" content="https://herbenoliveira.netlify.app/img/herben.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Portfólio", "item": "https://herbenoliveira.netlify.app/" },
+            { "@type": "ListItem", "position": 2, "name": "Buscador de Ofertas", "item": "https://herbenoliveira.netlify.app/buscador.html" }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Buscador de Ofertas Inteligente",
+          "description": "Sistema de monitoramento e análise estatística para detecção de ofertas em tempo real.",
+          "url": "https://herbenoliveira.netlify.app/buscador.html",
+          "author": { "@type": "Person", "name": "Herben Oliveira", "url": "https://herbenoliveira.netlify.app/" },
+          "inLanguage": "pt-BR",
+          "keywords": "Python, FastAPI, Playwright, Pandas, web scraping, análise de dados"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
-    <div class="noise"></div>
-    <div class="progress-bar"></div>
+    <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
 
-    <nav class="glass-nav">
+    <div class="noise" aria-hidden="true"></div>
+    <div class="progress-bar" aria-hidden="true"></div>
+
+    <nav class="glass-nav" aria-label="Navegação do projeto">
         <div class="nav-content">
             <a href="index.html" class="logo">← HRB.DATA</a>
         </div>
     </nav>
 
-    <main class="container">
-        <section class="projeto-detalhado reveal active" style="padding-top: 150px;">
+    <main id="main-content" class="container">
+        <article class="projeto-detalhado reveal active" style="padding-top: 150px;">
             <span class="section-tag">FULL-STACK DATA ENGINEERING</span>
             <h1>Buscador de Ofertas: Monitoramento e Análise Estatística</h1>
 
             <div class="service-grid" style="margin-top: 40px;">
-                <div class="service-card">
-                    <h3>A Abordagem</h3>
+                <section class="service-card">
+                    <h2>A Abordagem</h2>
                     <p>Mais do que um buscador, o sistema atua como uma pipeline de dados: extração via Playwright, processamento em Pandas e entrega em React 19.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Inteligência de Dados</h3>
+                </section>
+                <section class="service-card">
+                    <h2>Inteligência de Dados</h2>
                     <p>Aplicação de filtros de outliers e cálculo de mediana limpa para identificar oportunidades reais com threshold de 10% abaixo do mercado.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Stack Moderna</h3>
+                </section>
+                <section class="service-card">
+                    <h2>Stack Moderna</h2>
                     <p>Backend em FastAPI orquestrando a lógica de dados, com frontend reativo utilizando Tailwind 4 e animações Framer Motion.</p>
-                </div>
+                </section>
             </div>
 
             <div class="sobre-grid" style="margin-top: 80px; gap: 4rem;">
@@ -48,31 +98,31 @@
                     <p>O resultado é uma mediana refinada que representa o valor real do item, permitindo que o algoritmo destaque apenas o que é estatisticamente uma oferta imperdível.</p>
                 </div>
                 <div class="stack-category">
-                    <h3>Destaques Técnicos</h3>
-                    <div class="tags" style="margin-top: 20px;">
-                        <span class="tag">Python 3.10+</span>
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">Pandas</span>
-                        <span class="tag">Playwright</span>
-                        <span class="tag">React 19</span>
-                        <span class="tag">Tailwind 4</span>
-                    </div>
+                    <h2>Destaques Técnicos</h2>
+                    <ul class="tags" style="margin-top: 20px;" role="list">
+                        <li class="tag">Python 3.10+</li>
+                        <li class="tag">FastAPI</li>
+                        <li class="tag">Pandas</li>
+                        <li class="tag">Playwright</li>
+                        <li class="tag">React 19</li>
+                        <li class="tag">Tailwind 4</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="project-img" style="margin-top: 60px; display: grid; gap: 3rem;">
-                <img src="img/projeto buscador/Captura de tela 2026-05-04 200634.png" alt="Interface Principal do Buscador" style="border: 1px solid var(--border);">
-                <img src="img/projeto buscador/Captura de tela 2026-05-04 200741.png" alt="Análise de Resultados e Ofertas" style="border: 1px solid var(--border);">
-                <img src="img/projeto buscador/Captura de tela 2026-05-04 200803.png" alt="Detecção de Outliers em Ação" style="border: 1px solid var(--border);">
-                <img src="img/projeto buscador/Captura de tela 2026-05-04 200823.png" alt="Painel de Controle e Estatísticas" style="border: 1px solid var(--border);">
-            </div>
+            <figure class="project-img" style="margin-top: 60px; display: grid; gap: 3rem;">
+                <img src="img/projeto-buscador/interface-principal.png" alt="Interface principal do buscador de ofertas com campo de busca e resultados" width="1200" height="675" loading="lazy" decoding="async" style="border: 1px solid var(--border);">
+                <img src="img/projeto-buscador/analise-resultados.png" alt="Análise de resultados e ofertas detectadas pelo algoritmo" width="1200" height="675" loading="lazy" decoding="async" style="border: 1px solid var(--border);">
+                <img src="img/projeto-buscador/detecao-outliers.png" alt="Detecção e filtragem de outliers de preço em tempo real" width="1200" height="675" loading="lazy" decoding="async" style="border: 1px solid var(--border);">
+                <img src="img/projeto-buscador/painel-estatisticas.png" alt="Painel de controle com estatísticas de preços e mediana" width="1200" height="675" loading="lazy" decoding="async" style="border: 1px solid var(--border);">
+            </figure>
 
-            <div style="margin: 100px 0; text-align: center;">
+            <nav aria-label="Navegação do portfólio" style="margin: 100px 0; text-align: center;">
                 <a href="index.html" class="btn-primary">Voltar ao Portfólio Principal</a>
-            </div>
-        </section>
+            </nav>
+        </article>
     </main>
 
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
 </body>
 </html>

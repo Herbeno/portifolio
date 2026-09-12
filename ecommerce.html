@@ -1,67 +1,118 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Strategist | Herben Oliveira</title>
+    <title>E-Commerce Strategist | Dashboard Power BI — Herben Oliveira</title>
+    <meta name="description" content="Case study de dashboard e-commerce com Power BI: modelagem Star Schema, DAX avançado, KPIs de faturamento, crescimento MoM e performance por categoria.">
+    <meta name="author" content="Herben Oliveira">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#050505">
+    <link rel="canonical" href="https://herbenoliveira.netlify.app/ecommerce.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://herbenoliveira.netlify.app/ecommerce.html">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="HRB.DATA">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://herbenoliveira.netlify.app/ecommerce.html">
+    <meta property="og:title" content="E-Commerce Strategist | Dashboard Power BI — Herben Oliveira">
+    <meta property="og:description" content="Dashboard analítico de e-commerce com modelagem dimensional, DAX e KPIs executivos de vendas.">
+    <meta property="og:image" content="https://herbenoliveira.netlify.app/img/Ecommerce/dash1.png">
+    <meta property="og:image:alt" content="Dashboard Power BI de análise de vendas e-commerce">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="E-Commerce Strategist | Dashboard Power BI">
+    <meta name="twitter:description" content="Monitoramento de faturamento e comportamento de consumo com Power BI e DAX.">
+    <meta name="twitter:image" content="https://herbenoliveira.netlify.app/img/Ecommerce/dash1.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Portfólio", "item": "https://herbenoliveira.netlify.app/" },
+            { "@type": "ListItem", "position": 2, "name": "E-Commerce Strategist", "item": "https://herbenoliveira.netlify.app/ecommerce.html" }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "E-Commerce Strategist",
+          "description": "Dashboard estratégico de e-commerce com modelagem Star Schema e KPIs de vendas.",
+          "url": "https://herbenoliveira.netlify.app/ecommerce.html",
+          "author": { "@type": "Person", "name": "Herben Oliveira", "url": "https://herbenoliveira.netlify.app/" },
+          "inLanguage": "pt-BR",
+          "keywords": "Power BI, DAX, Power Query, Star Schema, e-commerce, Business Intelligence"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
-    <div class="noise"></div>
-    <div class="progress-bar"></div>
+    <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
 
-    <nav class="glass-nav">
+    <div class="noise" aria-hidden="true"></div>
+    <div class="progress-bar" aria-hidden="true"></div>
+
+    <nav class="glass-nav" aria-label="Navegação do projeto">
         <div class="nav-content">
             <a href="index.html" class="logo">← HRB.DATA</a>
         </div>
     </nav>
 
-    <main class="container">
-        <section class="projeto-detalhado reveal active" style="padding-top: 150px;">
+    <main id="main-content" class="container">
+        <article class="projeto-detalhado reveal active" style="padding-top: 150px;">
             <span class="section-tag">CASE STUDY</span>
             <h1>Dashboard Estratégico – E-Commerce</h1>
 
             <div class="service-grid" style="margin-top: 40px;">
-                <div class="service-card">
-                    <h3>Problema</h3>
+                <section class="service-card">
+                    <h2>Problema</h2>
                     <p>Transformar dados operacionais de vendas em uma visão executiva para tomada de decisão em tempo real.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Modelagem</h3>
+                </section>
+                <section class="service-card">
+                    <h2>Modelagem</h2>
                     <p>Esquema estrela com tabelas fato de vendas e dimensões Cliente, Produto e Calendário.</p>
-                </div>
-                <div class="service-card">
-                    <h3>KPIs</h3>
+                </section>
+                <section class="service-card">
+                    <h2>KPIs</h2>
                     <p>Faturamento, Crescimento Mensal (MoM), Ticket Médio e Performance por Categoria.</p>
-                </div>
+                </section>
             </div>
 
-            <div style="margin-top: 60px;">
+            <section style="margin-top: 60px;">
                 <h2>Stack Utilizada</h2>
-                <div class="tags">
-                    <span class="tag">Power BI</span>
-                    <span class="tag">DAX</span>
-                    <span class="tag">Power Query</span>
-                    <span class="tag">Dimensional Modeling</span>
-                </div>
-            </div>
+                <ul class="tags" role="list">
+                    <li class="tag">Power BI</li>
+                    <li class="tag">DAX</li>
+                    <li class="tag">Power Query</li>
+                    <li class="tag">Dimensional Modeling</li>
+                </ul>
+            </section>
 
-            <div class="project-img" style="margin-top: 60px; display: grid; gap: 2rem;">
-                <img src="img/Ecommerce/dash1.png" alt="Dashboard 1">
-                <img src="img/Ecommerce/dash2.png" alt="Dashboard 2">
-                <img src="img/Ecommerce/dash3.png" alt="Dashboard 3">
-            </div>
+            <figure class="project-img" style="margin-top: 60px; display: grid; gap: 2rem;">
+                <img src="img/Ecommerce/dash1.png" alt="Dashboard Power BI — visão geral de faturamento e vendas" width="1200" height="675" loading="lazy" decoding="async">
+                <img src="img/Ecommerce/dash2.png" alt="Dashboard Power BI — análise de crescimento mensal e ticket médio" width="1200" height="675" loading="lazy" decoding="async">
+                <img src="img/Ecommerce/dash3.png" alt="Dashboard Power BI — performance por categoria de produto" width="1200" height="675" loading="lazy" decoding="async">
+            </figure>
 
-            <div style="margin: 80px 0; text-align: center;">
+            <nav aria-label="Navegação do portfólio" style="margin: 80px 0; text-align: center;">
                 <a href="index.html" class="btn-primary">Voltar ao Portfólio</a>
-            </div>
-        </section>
+            </nav>
+        </article>
     </main>
 
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://herben-oliveira.netlify.app/sitemap.xml

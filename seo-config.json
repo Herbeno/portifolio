@@ -1,0 +1,38 @@
+{
+  "siteUrl": "https://herben-oliveira.netlify.app",
+  "siteName": "HRB.DATA",
+  "author": "Herben Oliveira",
+  "locale": "pt_BR",
+  "email": "hrbdata17@gmail.com",
+  "ogImage": "/img/herben.jpg",
+  "sameAs": [
+    "https://github.com/Herbeno",
+    "https://www.linkedin.com/in/herbenoliveira"
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "file": "index.html",
+      "priority": "1.0",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/buscador.html",
+      "file": "buscador.html",
+      "priority": "0.8",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/ecommerce.html",
+      "file": "ecommerce.html",
+      "priority": "0.8",
+      "changefreq": "monthly"
+    },
+    {
+      "path": "/petshop.html",
+      "file": "petshop.html",
+      "priority": "0.7",
+      "changefreq": "monthly"
+    }
+  ]
+}
