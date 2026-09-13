@@ -17,6 +17,12 @@
       "changefreq": "monthly"
     },
     {
+      "path": "/powerbi-ops.html",
+      "file": "powerbi-ops.html",
+      "priority": "0.9",
+      "changefreq": "monthly"
+    },
+    {
       "path": "/buscador.html",
       "file": "buscador.html",
       "priority": "0.8",

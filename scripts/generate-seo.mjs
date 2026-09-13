@@ -31,7 +31,7 @@ Sitemap: ${siteUrl}/sitemap.xml
 
 fs.writeFileSync(path.join(root, "robots.txt"), robots);
 
-const htmlFiles = ["index.html", "buscador.html", "ecommerce.html", "petshop.html", "404.html"];
+const htmlFiles = ["index.html", "buscador.html", "ecommerce.html", "petshop.html", "powerbi-ops.html", "404.html"];
 
 for (const file of htmlFiles) {
   const filePath = path.join(root, file);

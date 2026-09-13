@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas BI | Observabilidade Power BI Service — Herben Oliveira</title>
+    <meta name="description" content="Case study de observabilidade no Power BI Service: API REST para gateways, dataflows, modelos semânticos e linhagem, com painel interno e alertas via Telegram.">
+    <meta name="author" content="Herben Oliveira">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#050505">
+    <link rel="canonical" href="https://herben-oliveira.netlify.app/powerbi-ops.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://herben-oliveira.netlify.app/powerbi-ops.html">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="HRB.DATA">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://herben-oliveira.netlify.app/powerbi-ops.html">
+    <meta property="og:title" content="Alertas BI | Observabilidade Power BI Service — Herben Oliveira">
+    <meta property="og:description" content="Monitoramento operacional do Power BI Service via REST API, linhagem de ativos e alertas no Telegram.">
+    <meta property="og:image" content="https://herben-oliveira.netlify.app/img/powerbi-ops/ops-console.svg">
+    <meta property="og:image:alt" content="Console esquemático de monitoramento do Power BI Service">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alertas BI | Observabilidade Power BI Service">
+    <meta name="twitter:description" content="API REST do Power BI Service, status de gateway e refresh, linhagem e bot de alertas no Telegram.">
+    <meta name="twitter:image" content="https://herben-oliveira.netlify.app/img/powerbi-ops/ops-console.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Portfólio", "item": "https://herben-oliveira.netlify.app/" },
+            { "@type": "ListItem", "position": 2, "name": "Alertas BI", "item": "https://herben-oliveira.netlify.app/powerbi-ops.html" }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Alertas BI — Observabilidade no Power BI Service",
+          "description": "Monitoramento operacional de gateways, fluxos de dados e modelos semânticos via Power BI REST API, com persistência em schema SQL, painel interno e alertas no Telegram.",
+          "url": "https://herben-oliveira.netlify.app/powerbi-ops.html",
+          "author": { "@type": "Person", "name": "Herben Oliveira", "url": "https://herben-oliveira.netlify.app/" },
+          "inLanguage": "pt-BR",
+          "keywords": "Power BI Service REST API, gateways, dataflows, semantic models, lineage, Telegram bot, observabilidade, Python, SQL, PostgreSQL"
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
+
+    <div class="noise" aria-hidden="true"></div>
+    <div class="progress-bar" aria-hidden="true"></div>
+
+    <nav class="glass-nav" aria-label="Navegação do projeto">
+        <div class="nav-content">
+            <a href="index.html" class="logo">← HRB.DATA</a>
+        </div>
+    </nav>
+
+    <main id="main-content" class="container">
+        <article class="projeto-detalhado reveal active" style="padding-top: 150px;">
+            <span class="section-tag">POWER BI OPS &amp; AUTOMATION</span>
+            <h1>Alertas BI — Observabilidade no Power BI Service</h1>
+
+            <div class="service-grid" style="margin-top: 40px;">
+                <section class="service-card">
+                    <h2>Problema</h2>
+                    <p>Falhas de refresh, gateways offline e quebras de linhagem só apareciam quando o relatório já estava errado. O ambiente precisava de saúde operacional visível, não só de dashboards de negócio.</p>
+                </section>
+                <section class="service-card">
+                    <h2>Abordagem</h2>
+                    <p>Jobs agendados consultam a <strong>Power BI REST API</strong> para status de gateways, dataflows e semantic models, incluindo linhagem entre ativos, e publicam o resultado no gerenciador interno da empresa.</p>
+                </section>
+                <section class="service-card">
+                    <h2>Resposta</h2>
+                    <p>Quando um refresh falha ou um gateway sai do ar, um <strong>bot no Telegram</strong> dispara o alerta com contexto suficiente para agir antes do impacto chegar ao usuário final.</p>
+                </section>
+            </div>
+
+            <div class="sobre-grid" style="margin-top: 80px; gap: 4rem;">
+                <div class="sobre-content">
+                    <span class="section-tag">ARQUITETURA</span>
+                    <h2>Da API ao alerta</h2>
+                    <p>O Power BI Service expõe o estado da plataforma — mas esse estado só vira operação quando é coletado com cadência, interpretado e entregue no canal certo. O Alertas BI trata o workspace como um sistema a ser observado.</p>
+                    <p>As chamadas autenticadas cobrem <strong>gateways</strong> (online/offline), <strong>dataflows</strong> e <strong>modelos semânticos</strong> (ciclo de atualização) e <strong>lineage</strong> (de quem depende o quê). Os dados são persistidos em um <strong>schema SQL dedicado</strong>, com tabelas modeladas para alimentar o gerenciador interno; o Telegram fecha o loop de incidente.</p>
+                    <p>O desenho prioriza observabilidade: menos surpresa no refresh da manhã, mais rastreio quando um dataset sobe e o relatório filho quebra.</p>
+                </div>
+                <div class="stack-category">
+                    <h2>Stack técnica</h2>
+                    <ul class="tags" style="margin-top: 20px;" role="list">
+                        <li class="tag">Power BI REST API</li>
+                        <li class="tag">Power BI Service</li>
+                        <li class="tag">Semantic Models</li>
+                        <li class="tag">Dataflows</li>
+                        <li class="tag">On-premises Gateway</li>
+                        <li class="tag">Lineage</li>
+                        <li class="tag">Python</li>
+                        <li class="tag">SQL</li>
+                        <li class="tag">PostgreSQL</li>
+                        <li class="tag">Modelagem de Schema</li>
+                        <li class="tag">Telegram Bot API</li>
+                    </ul>
+                </div>
+            </div>
+
+            <figure class="project-img" style="margin-top: 60px;">
+                <img src="img/powerbi-ops/ops-console.svg" alt="Esquema do console Alertas BI com gateways, dataflows, linhagem e alertas no Telegram" width="1200" height="675" loading="lazy" decoding="async">
+            </figure>
+
+            <nav aria-label="Navegação do portfólio" style="margin: 100px 0; text-align: center;">
+                <a href="index.html" class="btn-primary">Voltar ao Portfólio Principal</a>
+            </nav>
+        </article>
+    </main>
+
+    <script src="js/index.js" defer></script>
+</body>
+</html>

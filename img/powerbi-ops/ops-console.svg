@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
+  <rect width="1200" height="675" fill="#0d0d0d"/>
+  <rect x="48" y="40" width="1104" height="595" rx="16" fill="#151515" stroke="#2a2a2a"/>
+  <text x="80" y="92" fill="#ccff00" font-family="monospace" font-size="18" font-weight="700">HRB.OPS // POWER BI SERVICE</text>
+  <text x="80" y="118" fill="#888888" font-family="sans-serif" font-size="14">Gateways, dataflows, semantic models and lineage</text>
+
+  <rect x="80" y="150" width="320" height="140" rx="10" fill="#0d0d0d" stroke="#333"/>
+  <text x="100" y="186" fill="#999" font-family="monospace" font-size="12">GATEWAYS</text>
+  <text x="100" y="230" fill="#ccff00" font-family="sans-serif" font-size="36" font-weight="700">ONLINE</text>
+  <text x="100" y="260" fill="#666" font-family="sans-serif" font-size="13">heartbeat via REST API</text>
+
+  <rect x="440" y="150" width="320" height="140" rx="10" fill="#0d0d0d" stroke="#333"/>
+  <text x="460" y="186" fill="#999" font-family="monospace" font-size="12">DATAFLOWS</text>
+  <text x="460" y="230" fill="#ffffff" font-family="sans-serif" font-size="36" font-weight="700">REFRESH</text>
+  <text x="460" y="260" fill="#666" font-family="sans-serif" font-size="13">status de atualizacao</text>
+
+  <rect x="800" y="150" width="304" height="140" rx="10" fill="#0d0d0d" stroke="#333"/>
+  <text x="820" y="186" fill="#999" font-family="monospace" font-size="12">SEMANTIC MODELS</text>
+  <text x="820" y="230" fill="#ffffff" font-family="sans-serif" font-size="36" font-weight="700">LINEAGE</text>
+  <text x="820" y="260" fill="#666" font-family="sans-serif" font-size="13">dependencias mapeadas</text>
+
+  <rect x="80" y="320" width="700" height="270" rx="10" fill="#0d0d0d" stroke="#333"/>
+  <text x="100" y="356" fill="#999" font-family="monospace" font-size="12">LINHAGEM</text>
+  <rect x="120" y="390" width="140" height="44" rx="6" fill="#1a1a1a" stroke="#ccff00"/>
+  <text x="190" y="418" text-anchor="middle" fill="#ccff00" font-family="monospace" font-size="12">GATEWAY</text>
+  <line x1="260" y1="412" x2="330" y2="412" stroke="#ccff00" stroke-width="2"/>
+  <rect x="330" y="390" width="150" height="44" rx="6" fill="#1a1a1a" stroke="#555"/>
+  <text x="405" y="418" text-anchor="middle" fill="#ccc" font-family="monospace" font-size="12">DATAFLOW</text>
+  <line x1="480" y1="412" x2="550" y2="412" stroke="#555" stroke-width="2"/>
+  <rect x="550" y="390" width="180" height="44" rx="6" fill="#1a1a1a" stroke="#555"/>
+  <text x="640" y="418" text-anchor="middle" fill="#ccc" font-family="monospace" font-size="12">SEMANTIC MODEL</text>
+  <text x="100" y="480" fill="#666" font-family="sans-serif" font-size="13">Fonte - Gateway - Fluxo - Modelo - Relatorio</text>
+  <text x="100" y="540" fill="#888" font-family="sans-serif" font-size="14">Jobs agendados consultam a API e publicam o status no gerenciador.</text>
+
+  <rect x="810" y="320" width="294" height="270" rx="10" fill="#0d0d0d" stroke="#ccff00"/>
+  <text x="830" y="356" fill="#ccff00" font-family="monospace" font-size="12">TELEGRAM BOT</text>
+  <text x="830" y="400" fill="#fff" font-family="sans-serif" font-size="15">Refresh falhou</text>
+  <text x="830" y="434" fill="#fff" font-family="sans-serif" font-size="15">Gateway offline</text>
+  <text x="830" y="468" fill="#aaa" font-family="sans-serif" font-size="14">Alertas em tempo habil</text>
+  <text x="830" y="530" fill="#666" font-family="monospace" font-size="12">#ops #powerbi</text>
+</svg>

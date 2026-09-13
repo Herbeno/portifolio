@@ -10,6 +10,9 @@ Acredito que a tecnologia deve servir para simplificar. Minha paixão é analisa
 
 ## Onde coloco minha energia
 
+### [Alertas BI — Observabilidade no Power BI Service](https://herben-oliveira.netlify.app/powerbi-ops.html)
+Operação do ambiente de BI, não só do dashboard. Jobs agendados consultam a **Power BI REST API** (gateways, dataflows, semantic models e lineage), persistem o histórico em um **schema SQL** dedicado, alimentam o gerenciador interno e disparam alertas no **Telegram** quando um refresh falha ou um gateway sai do ar.
+
 ### [Buscador de Ofertas Inteligente](https://herben-oliveira.netlify.app/buscador.html)
 Este é o projeto que melhor resume meu fluxo de trabalho. Ele une:
 - **Extração**: Automação com Playwright para capturar dados em tempo real.
@@ -24,16 +27,17 @@ Focado em Business Intelligence, onde aplico modelagem Star Schema e DAX avança
 
 ## Tecnologias & Expertise
 
-- **Análise & BI**: Power BI, DAX, Power Query e Excel Avançado.
+- **Análise & BI**: Power BI, Power BI Service, DAX, Power Query e Excel Avançado.
+- **Ops de plataforma**: Power BI REST API, gateways, dataflows, semantic models, lineage, SQL/PostgreSQL e alertas via Telegram.
 - **Engenharia de Dados**: Python, Automações ETL, Modelagem Dimensional (Star Schema) e Playwright.
 - **Desenvolvimento Moderno**: Arquiteturas orientadas a IA (MCP/Model Context Protocol), FastAPI e React.
 
 ---
 
-## Impacto em Números
-- **20+** Dashboards estratégicos entregues.
-- **30+** Processos e relatórios manuais convertidos em automações ágeis.
-- **5+** Ecossistemas de dados modelados do zero.
+## Foco de atuação
+- **BI & Visualização** — dashboards executivos e storytelling com dados.
+- **Engenharia de Dados** — pipelines, modelagem e extração confiável.
+- **Ops & Automação** — saúde do Power BI Service e resposta a incidentes.
 
 ---
 
