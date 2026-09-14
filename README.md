@@ -23,6 +23,9 @@ Este é o projeto que melhor resume meu fluxo de trabalho. Ele une:
 ### [E-Commerce Strategist](https://herben-oliveira.netlify.app/ecommerce.html)
 Focado em Business Intelligence, onde aplico modelagem Star Schema e DAX avançado para criar dashboards que contam histórias. Minha meta é que, ao olhar para o painel, o gestor entenda o faturamento e o comportamento do consumo de forma instantânea.
 
+### [Estratégia A&B Performance](https://herben-oliveira.netlify.app/aeb.html)
+BI em desenvolvimento para hospitalidade: restaurantes e hotéis sobre o sistema **Desbravador**. O objetivo é entregar ao gerente, durante o dia, a visão que hoje exige cruzar dois ou três relatórios operacionais.
+
 ---
 
 ## Tecnologias & Expertise

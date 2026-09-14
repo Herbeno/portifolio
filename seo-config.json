@@ -35,6 +35,12 @@
       "changefreq": "monthly"
     },
     {
+      "path": "/aeb.html",
+      "file": "aeb.html",
+      "priority": "0.8",
+      "changefreq": "monthly"
+    },
+    {
       "path": "/petshop.html",
       "file": "petshop.html",
       "priority": "0.7",
